@@ -16,31 +16,53 @@
         <div class="api-section">
             <h1>Random Dog Generator</h1>
             <div class="api-content">
-                <!-- Bootstrap Card for Dog Generator -->
                 <div class="card" style="width: 18rem;">
-                    <img src="img/PlaceHolderDog.png" class="card-img-top" alt="Placeholder for dog image">
+                    <div id="dogCarousel" class="carousel slide" data-bs-ride="false">
+                        <div class="carousel-inner">
+                            <!-- Slides will be added here dynamically -->
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#dogCarousel" data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#dogCarousel" data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
+                    </div>
                     <div class="card-body">
                         <button type="button" class="btn btn-primary">Show Random Dog</button>
                     </div>
                 </div>
             </div>
         </div>
+        
 
 
         <div class="api-section">
             <h1>Weather App</h1>
             <div class="api-content">
-            <!-- Input for city name -->
-            <input type="text" id="cityInput" class="form-control" placeholder="Enter City Name">
-            <button id="getWeather" class="btn btn-success mt-2">Get Weather</button>
-    
-            <!-- Display Weather Data -->
-            <div id="weatherDisplay" class="mt-4">
-                <!-- Weather data will be displayed here -->
+                <!-- Input for city name -->
+                <input type="text" id="cityInput" class="form-control" placeholder="Enter City Name">
+                <button id="getWeather" class="btn btn-success mt-2">Get Weather</button>
+        
+                <!-- Weather Data Carousel -->
+                <div id="weatherCarousel" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                        <!-- Weather slides will be added here dynamically -->
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#weatherCarousel" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#weatherCarousel" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
             </div>
         </div>
-    </div>
-    
+        
     <!-- Bootstrap JS Bundle and Main JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js" integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous"></script>
     <script src="main.js"></script>

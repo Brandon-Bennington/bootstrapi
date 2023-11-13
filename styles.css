@@ -15,6 +15,13 @@ h1 {
     font-size: 36px; /* Corrected unit */
 }
 
+.api-content {
+    font-weight: bold;
+    font-style: italic;
+    color: #999;
+    padding: 10px;
+}
+
 .api-section {
     width: 90%;
     max-width: 900px;
@@ -27,10 +34,21 @@ h1 {
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15); /* More pronounced shadow */
 }
 
-.api-content {
-    font-weight: bold;
-    font-style: italic;
-    color: #999;
+
+button {
+    background-color: #007bff;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    transition: background-color 0.3s, box-shadow 0.3s; /* Added transition for shadow */
+    cursor: pointer; /* Indicates button is clickable */
+    margin-top: 10px;
+}
+
+button:hover {
+    background-color: #0056b3;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Enhanced hover effect */
 }
 
 .card {
@@ -48,6 +66,17 @@ h1 {
     margin-bottom: 10px;
 }
 
+.card-body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+.card-body .form-control {
+    margin-bottom: 10px; /* or any other value for vertical spacing */
+    width: 80%; /* or any other value that suits your design */
+}
 
 .card-img-top {
     max-width: 100%;
@@ -55,20 +84,12 @@ h1 {
     border-radius: 0.25rem; /* Match the border-radius of the card */
 }
 
-button {
-    background-color: #007bff;
-    color: white;
-    padding: 10px 15px;
-    border: none;
-    border-radius: 5px;
-    transition: background-color 0.3s, box-shadow 0.3s; /* Added transition for shadow */
-    cursor: pointer; /* Indicates button is clickable */
+/* Additional hover effects and transitions */
+.card:hover {
+    transform: translateY(-5px);
+    transition: transform 0.3s ease;
 }
 
-button:hover {
-    background-color: #0056b3;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Enhanced hover effect */
-}
 
 input[type="text"] {
     border: 1px solid #ddd;
@@ -89,8 +110,8 @@ input[type="text"] {
     }
 }
 
-/* Additional hover effects and transitions */
-.card:hover {
-    transform: translateY(-5px);
-    transition: transform 0.3s ease;
+#weatherCarousel .carousel-control-prev, 
+#weatherCarousel .carousel-control-next {
+    background-color: rgba(0, 0, 0, 0.5); /* Add background color for visibility */
+    border-radius: 50%; /* Optional: makes the buttons round */
 }
